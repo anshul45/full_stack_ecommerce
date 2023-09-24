@@ -7,4 +7,4 @@ userRoutes.get("/login", userLogin);
 
 userRoutes.post("/signin", userSignin);
 
-export default userRoutes;
+export default userRoute;
