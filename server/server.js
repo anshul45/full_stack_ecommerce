@@ -10,7 +10,7 @@ const app = express();
 dotenv.config();
 app.use(bodyParser.json());
 
-app.use("/api/v1/users", authRoutes);
+app.use("/api/v1/auth", authRoutes);
 app.use("/api/v1/products", productRoutes);
 
 app.listen(process.env.PORT, () => {
