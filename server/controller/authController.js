@@ -4,9 +4,12 @@ import jwt from "jsonwebtoken";
 
 export const userLogIn = async (req, res) => {
   const auth = await Auth.findOne({ email: req.body.email });
+  if (!auth) {
+    res.status(400).json({ error: "User or Passwrd incorrect" });
+  }
   const comparePassword = bcrypt.compare(req.body.password, auth.password);
   if (!comparePassword) {
-    res.status(401).send("User or Passwrd incorrect");
+    res.status(400).json({ error: "User or Passwrd incorrect" });
   }
   const token = jwt.sign({ email: req.body.email }, process.env.JWT_SECRET);
 
