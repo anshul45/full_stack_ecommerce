@@ -13,7 +13,7 @@ export const userLogIn = async (req, res) => {
   }
   const token = jwt.sign({ email: req.body.email }, process.env.JWT_SECRET);
 
-  res.status(200).send({ token: "bearer " + token });
+  res.status(200).send({ token });
 };
 
 export const userSignUp = async (req, res) => {
@@ -25,5 +25,5 @@ export const userSignUp = async (req, res) => {
   await user.save();
   const token = jwt.sign({ email: req.body.email }, process.env.JWT_SECRET);
 
-  res.status(200).send({ token: "bearer " + token });
+  res.status(200).send({ token });
 };
