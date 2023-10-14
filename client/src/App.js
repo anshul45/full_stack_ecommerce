@@ -1,9 +1,8 @@
-import Header from "./component/Header";
-import Product from "./component/Product";
+import Home from "./page/Home";
 function App() {
   return (
     <div>
-      <Product />
+      <Home />
     </div>
   );
 }

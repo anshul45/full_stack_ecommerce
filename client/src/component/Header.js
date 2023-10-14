@@ -2,6 +2,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import SearchIcon from "@mui/icons-material/Search";
+import Logo from "../assets/logo.png";
 import React from "react";
 const Header = () => {
   return (
@@ -18,7 +19,7 @@ const Header = () => {
           </div>
         </div>
         <div className="pr-60">
-          <img src="../../assets/logo.png" className="cursor-pointer" />
+          <img src={Logo} alt="Logo" className="w-16 h-16 cursor-pointer" />
         </div>
         <div className="flex gap-5">
           <AccountCircleIcon className="hover:bg-gray-100 cursor-pointer" />
