@@ -18,9 +18,11 @@ const Header = () => {
             />
           </div>
         </div>
+
         <div className="pr-60">
           <img src={Logo} alt="Logo" className="w-16 h-16 cursor-pointer" />
         </div>
+
         <div className="flex gap-5">
           <AccountCircleIcon className="hover:bg-gray-100 cursor-pointer" />
           <ShoppingCartIcon className="hover:bg-gray-100  cursor-pointer" />
