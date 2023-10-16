@@ -2,7 +2,7 @@ import React from "react";
 
 const Category = () => {
   return (
-    <div className="flex gap-5 items-center justify-evenly mt-56">
+    <div className="flex gap-5 items-center justify-evenly mt-36">
       <div className="w-56 h-56 bg-green-50 rounded-full text-center pt-24 text-gray-600 text-2xl">
         Tshirt
       </div>

@@ -1,5 +1,4 @@
 import React from "react";
-import { product } from "../assets/products";
 import Logo from "../assets/shopping_cart.png";
 
 const Banner = () => {
