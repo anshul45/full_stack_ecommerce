@@ -5,6 +5,7 @@ import Login from "./page/Login";
 import Error from "./page/Error";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Register from "./page/Register";
+import AddProduct from "./page/AddProduct";
 
 function App() {
   const router = createBrowserRouter([
@@ -16,7 +17,8 @@ function App() {
   return (
     <>
       <Header />
-      <RouterProvider router={router} />
+      {/* <RouterProvider router={router} /> */}
+      <AddProduct />
       <Footer />
     </>
   );
